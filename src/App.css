@@ -1,38 +1,320 @@
-.App {
+/* App.css */
+*{
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .container {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+  
+  .teacher-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image stays within the circular boundary */
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  }
+  
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+.grey-box {
+    background-color: #ccc;
+    padding: 4px; /* Adjusted padding */
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .edit-icon {
+    font-size: 20px; /* Adjust font size as needed */
+    margin-right: 10px;
+  }
+  
+  .grade-section {
+    flex-grow: 1; /* Allow this section to grow and take available space */
+    display: flex;
+    align-items: center;
+  }
+  
+  .section-dropdown {
+    margin-left: auto; /* Push the section dropdown to the rightmost */
+    padding: 5px 10px;
+    background-color: #ff00ff; /* Placeholder color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* ... (existing code) */
+  
+  
+  /* App.css */
+
+/* ... (existing code) */
+
+.horizontal-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .group-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Placeholder color */
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .horizontal-group p {
+    margin: 0; /* Remove default margin for paragraphs */
+  }
+  
+  .view-all {
+    margin-left: auto;
+  }
+  
+  .avatars-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    margin-left: -10px; /* Adjust as needed */
+    position: relative;
+    z-index: 1; /* Ensure avatars appear on top of each other */
+  }
+  
+  .avatar:nth-child(2) {
+    margin-left: -10px; /* Adjust as needed */
+    z-index: 2;
+  }
+  
+  .avatar:nth-child(3) {
+    margin-left: -10px; /* Adjust as needed */
+    z-index: 3;
+  }
+  
+  /* ... (existing code) */
+  
+  
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    background-color: #eee; /* Placeholder color */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+
+  
+  .subcontainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .content {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .subcontainer-header {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  
+  .vertical-partition {
+    border-left: 1px solid #ccc;
+    height: 200px;
+    margin: 0 10px;
+  }
+  
+  .unit-info {
+    margin-top: 10px;
+    text-align: justify;
+    margin-right: 2px;
+  }
+  
+  .unit-name, .stage {
+    font-weight: bold;
+  }
+  
+  .green-progress-bar {
+    background-color: #00ff00;
+    height: 10px;
+    margin-top: 15px;
+    border: 3px yellowgreen solid;
+    border-radius: 7px;
+  }
+  
+  .arrow-icon {
+    /* Add styles for the arrow icon */
+  }
+  
+  .line-info {
+    margin-top: 10px;
+  }
+  
+  .line-name {
+    font-weight: bold;
+  }
+  
+  .avatars-pile {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* Placeholder color */
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .due-today-box {
+    background: linear-gradient(45deg, #ff00ff, #ff99cc); /* Placeholder gradient */
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  .view-button {
+    background-color: #ff00ff; /* Placeholder color */
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .tiles-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .tile {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .tag {
+    background-color: #00ff00; /* Placeholder color */
+    padding: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .plus-button {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #ff00ff, #ff99cc); /* Placeholder gradient */
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* App.css */
+
+.new-popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 999;
+}
+
+.new-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.new-popup-title {
+  color: #333;
+}
+
+.new-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.new-card {
+  width: calc(33.33% - 20px); /* 3 cards in a row */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.new-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc; /* Placeholder color */
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.new-number {
+  color: #8a2be2; /* Violet color */
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.new-count-text {
+  color: #888; /* Grey color */
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.dp{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Add more responsive styles as needed */
